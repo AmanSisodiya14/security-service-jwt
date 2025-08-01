@@ -208,27 +208,25 @@ The application includes Spring Boot Actuator for monitoring:
 ```
 src/
 ├── main/
-│   ├── java/com/metasetu/platform/jwt/
-│   │   ├── config/
-│   │   │   └── CorsConfig.java
-│   │   ├── controller/
-│   │   │   └── TokenController.java
-│   │   ├── entity/
-│   │   │   ├── IotResponse.java
-│   │   │   └── JwtResponse.java
-│   │   ├── exception/
-│   │   │   └── IotExceptionHandler.java
-│   │   ├── security/
-│   │   │   └── EncryptionService.java
-│   │   ├── service/
-│   │   │   ├── IJwtService.java
-│   │   │   └── JwtService.java
-│   │   └── SecurityServiceApplication.java
-│   └── resources/
-│       └── application.yml
-└── test/
-    └── java/com/metasetu/platform/jwt/
-        └── SecurityServiceApplicationTests.java
+   ├── java/com/metasetu/platform/jwt/
+   │   ├── config/
+   │   │   └── CorsConfig.java
+   │   ├── controller/
+   │   │   └── TokenController.java
+   │   ├── entity/
+   │   │   ├── IotResponse.java
+   │   │   └── JwtResponse.java
+   │   ├── exception/
+   │   │   └── IotExceptionHandler.java
+   │   ├── security/
+   │   │   └── EncryptionService.java
+   │   ├── service/
+   │   │   ├── IJwtService.java
+   │   │   └── JwtService.java
+   │   └── SecurityServiceApplication.java
+   └── resources/
+       └── application.yml
+ 
 ```
 
 ## 🤝 Contributing
