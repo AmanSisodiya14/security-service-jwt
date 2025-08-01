@@ -1,0 +1,33 @@
+
+server:
+  port: ${SERVER_PORT:8081}
+
+algorithm:
+  name: AES
+  key: asdfghjkl
+
+jwt:
+  key: ${JWT_KEY:afafasfaCcadwavfsfarvf}
+  token:
+    expiration-time: ${TOKEN_EXPIRATION_TIME:86400000} # 1 day in milliseconds
+    refresh-token-expiration-time: ${REFRESH_TOKEN_EXPIRATION_TIME:604800000 }  # 7 days in milliseconds
+
+
+
+security:
+  algorithm:
+    name: ${SECURITY_ALGORITHM_NAME:AES}
+    transformation: ${SECURITY_TRANSFORMATION:AES}
+    iv: ${SECURITY_IV:qwefghju65}
+    key: ${SECURITY_KEY:asdfghjkl}
+
+
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} [%thread] [%X{traceId:-},%X{spanId:-}] %-5level %logger{36}:%line - %msg%n"
+spring:
+  profiles:
+    active: dev
+
+
